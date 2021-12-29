@@ -3,8 +3,8 @@ import { pathToFileURL } from 'url';
 import { build } from 'esbuild';
 import { loadTsConfig } from './utils/tsconfig';
 import { JS_EXT_RE } from './config';
-import { 
-  guessFormat, 
+import {
+  guessFormat,
   dynamicImport,
   tsconfigPathsToRegExp,
   defaultGetOutputFile,

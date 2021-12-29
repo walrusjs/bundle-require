@@ -9,11 +9,11 @@ export const usingDynamicImport = typeof jest === 'undefined';
 
 /**
  * Json解析
- * @param data 
+ * @param data
  */
 export function jsonParse(data: string) {
   try {
-    return new Function(`return ${strip(data).trim()}`);
+    return new Function(`return ${strip(data).trim()}`)();
   } catch (e) {
     return {}
   }
@@ -37,7 +37,7 @@ export function guessFormat(inputFile: string): 'esm' | 'cjs' {
 
 /**
  * 获取包类型
- * @returns 
+ * @returns
  */
 export const getPkgType = (): string | undefined => {
   try {
@@ -61,10 +61,9 @@ export const defaultGetOutputFile: GetOutputFile = (filepath, format) =>
   );
 
 export const dynamicImport: RequireFunction = (id: string, { format }) => {
-  const fn = format === 'esm' 
-    ? new Function('file', 'return import(file)') 
+  const fn = format === 'esm'
+    ? new Function('file', 'return import(file)')
     : require;
 
   return fn(id)
 }
-  

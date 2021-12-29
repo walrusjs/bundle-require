@@ -4,9 +4,9 @@ import { jsonParse } from './index';
 
 /**
  * 获取 tsconfig.json 配置
- * @param dir 
- * @param filename 
- * @returns 
+ * @param dir
+ * @param filename
+ * @returns
  */
 export function loadTsConfig(
   dir = process.cwd(),
@@ -20,13 +20,13 @@ export function loadTsConfig(
     if (fs.existsSync(filePath)) {
       const contents = fs.readFileSync(filePath, 'utf8');
 
-      return { 
-        data: jsonParse(contents), 
-        path: filePath 
+      return {
+        data: jsonParse(contents),
+        path: filePath
       }
     }
     dir = path.dirname(dir);
   }
-  
+
   return {};
 }
