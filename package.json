@@ -28,14 +28,14 @@
     "esbuild": ">=0.13"
   },
   "devDependencies": {
-    "@walrus/test": "^1.3.0",
-    "esbuild": "^0.14.9",
-    "lint-staged": "^12.1.4",
-    "prettier": "^2.5.1",
-    "strip-json-comments": "^4.0.0",
-    "tsup": "^5.11.9",
-    "typescript": "^4.5.4",
-    "yorkie": "^2.0.0"
+    "@walrus/test": "1.3.0",
+    "esbuild": "0.14.9",
+    "lint-staged": "12.1.4",
+    "prettier": "2.5.1",
+    "strip-json-comments": "4.0.0",
+    "tsup": "5.11.9",
+    "typescript": "4.5.4",
+    "yorkie": "2.0.0"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
