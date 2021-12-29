@@ -1,0 +1,1 @@
+export const JS_EXT_RE = /\.(mjs|cjs|ts|js|tsx|jsx)$/;

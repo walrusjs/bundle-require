@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "DOM"
+    ],
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

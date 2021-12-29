@@ -1,0 +1,52 @@
+{
+  "name": "@walrus/bundle-require",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "walrus-test",
+    "build": "tsup src/index.ts --format cjs --dts-resolve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walrusjs/bundle-require.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walrusjs/bundle-require/issues"
+  },
+  "homepage": "https://github.com/walrusjs/bundle-require#readme",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "esbuild": ">=0.13"
+  },
+  "devDependencies": {
+    "@walrus/test": "^1.3.0",
+    "esbuild": "^0.14.9",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1",
+    "strip-json-comments": "^4.0.0",
+    "tsup": "^5.11.9",
+    "typescript": "^4.5.4",
+    "yorkie": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
