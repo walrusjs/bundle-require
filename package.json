@@ -1,7 +1,7 @@
 {
   "name": "@walrus/bundle-require",
   "version": "1.0.1",
-  "description": "",
+  "description": "加载用户提供的配置文件，支持typescript。",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
