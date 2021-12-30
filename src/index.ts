@@ -84,3 +84,6 @@ export async function bundleRequire(options: Options) {
 
   return extractResult(result);
 }
+
+export { jsonParse } from './utils';
+export { loadTsConfig } from './utils/tsconfig';
